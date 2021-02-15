@@ -5,21 +5,33 @@
 
   &__element {
     flex-basis: 200px;
-    padding: 30px 14px 15px;
+    padding: 15px 14px;
     border: 1px solid $product-element-border;
     border-radius: 5px;
     margin-bottom: 50px;
   }
   
+  &__img {
+    width: 166px;
+    padding: 12px 0;
+    transition: transform 1s;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    
+    &:hover {
+      transform: scale(1.2);
+      border-color: $product-element-border;
+    }
+  }
+
   &__picture {
     display: block;
-    width: 160px;
-    height: 134px;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
   }
   
   &__info {
-    margin-top: 45px;
+    margin-top: 30px;
   }
   
   &__name {
